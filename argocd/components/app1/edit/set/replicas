@@ -15,4 +15,3 @@ do
         yq -i e "$KEY=$VALUE"  $file
     fi
 done
-

@@ -14,4 +14,3 @@ do
         echo "$VALUE replicas in $file"
     fi
 done
-
