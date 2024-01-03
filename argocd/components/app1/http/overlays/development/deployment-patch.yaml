@@ -16,4 +16,3 @@ spec:
       - image: quay.io/jduimovich0/bootstrap
         name: container-image  
 
-

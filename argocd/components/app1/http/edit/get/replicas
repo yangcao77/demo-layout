@@ -1,6 +1,6 @@
 
 COMPONENTS_ROOT=$1  
-GETTER='.metadata.annotations.["tad.gitops.get/image"]'
+GETTER='.metadata.annotations.["tad.gitops.get/replicas"]'
 
 FILES="$COMPONENTS_ROOT/base/deployment.yaml  $COMPONENTS_ROOT/overlays/development/deployment-patch.yaml"
 for file in $FILES 
@@ -11,7 +11,6 @@ do
         echo "$GETTER missing in $file"
     else   
         VALUE=$(yq e "$KEY" $file) 
-        echo "$VALUE image in $file"
+        echo "$VALUE replicas in $file"
     fi
 done
-

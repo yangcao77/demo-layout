@@ -14,4 +14,3 @@ do
         echo "$VALUE image in $file"
     fi
 done
-
