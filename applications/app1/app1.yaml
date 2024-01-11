@@ -7,8 +7,8 @@ metadata:
 spec:
   project: default
   source:
-    path: argocd/application
-    repoURL: https://github.com/jduimovich/demo-layout
+    path: ./applications/app1
+    repoURL: https://github.com/yangcao77/demo-layout
     targetRevision: main
   destination:
     namespace: demo-layout
