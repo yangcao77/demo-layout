@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app2
+  name: app1
   namespace: openshift-gitops 
   finalizers: ["resources-finalizer.argocd.argoproj.io"] 
 spec:
   project: default
   source:
-    path: ./applications/app2
+    path: ./app1
     repoURL: https://github.com/yangcao77/demo-layout
     targetRevision: main
   destination:
